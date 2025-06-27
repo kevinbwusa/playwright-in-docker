@@ -1,0 +1,20 @@
+{
+  "name": "playwright-docker",
+  "version": "1.0.0",
+  "description": "A project for using playwright for end-to-end testing purpose with docker for deployment",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test --browser=all",
+    "test-html-report": "playwright test --browser=all --reporter=html",
+    "test-json-report": "PLAYWRIGHT_JSON_OUTPUT_NAME=results.json playwright test --browser=chromium --reporter=json"
+  },
+  "author": "Donald Le",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.53.1",
+    "@types/node": "^17.0.35",
+    "playwright": "^1.22.1",
+    "toml": "^3.0.0",
+    "typescript": "^4.6.4"
+  }
+}
